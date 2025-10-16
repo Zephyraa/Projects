@@ -39,7 +39,7 @@ def get_secret_word(player_arr, chooser):
     print("The secret word will now be chosen. Each player will enter a word.\n\n")
 
     for player in player_arr:
-        input(f"Pass the device to {player}.\nAll other players, avert thy gaze.\n\n\n{player}, press any key to continue...")
+        input(f"Pass the device to {player}.\nAll other players, avert thy gaze.\n\n\n{player}, press [enter] to continue...")
 
         while True:
             word = input("Enter a secret word: ")
@@ -64,12 +64,12 @@ def start_game(player_arr, imposter, secret_word):
     print("Players will now find out their role.\n\n")
 
     for player in player_arr:
-        input(f"Pass the device to {player}.\nAll other players, avert thy gaze.\n\n\n{player}, press any key to continue...")
+        input(f"Pass the device to {player}.\nAll other players, avert thy gaze.\n\n\n{player}, press [enter] to continue...")
 
         if (player == imposter):
-            input("You are the imposter.\nPress any key to continue...")
+            input("You are the imposter.\nPress [enter] to continue...")
         else:
-            input(f"You are not the imposter.\nThe secret word is: {secret_word}\nPress any key to continue...")
+            input(f"You are not the imposter.\nThe secret word is: {secret_word}\nPress [enter] to continue...")
 
         clear_screen()
 
